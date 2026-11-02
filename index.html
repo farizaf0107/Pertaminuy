@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PT Kilang Pertamina Internasional RU IV Cilacap</title>
+  <meta name="description" content="Profil PT Kilang Pertamina Internasional Refinery Unit IV Cilacap, kilang minyak dan petrokimia berkelas dunia.">
+  <meta name="keywords" content="Pertamina, Kilang, KPI, RU IV, Cilacap, Refinery Unit IV">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo-kpi.png" rel="icon" type="image/png">
+  <link href="assets/img/logo-kpi.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Penyesuaian warna (palet Pertamina: merah, biru, hijau). Hanya mengubah warna, tidak mengubah tata letak. -->
+  <style>
+    :root {
+      --background-color: #ffffff;
+      --default-color: #3b4656;
+      --heading-color: #0b3a6f;
+      --accent-color: #e30613;
+      --surface-color: #ffffff;
+      --contrast-color: #ffffff;
+      --nav-color: #0b3a6f;
+      --nav-hover-color: #e30613;
+      --nav-mobile-background-color: #ffffff;
+      --nav-dropdown-background-color: #ffffff;
+      --nav-dropdown-color: #0b3a6f;
+      --nav-dropdown-hover-color: #e30613;
+    }
+
+    .light-background {
+      --background-color: #f2f6fb;
+      --surface-color: #ffffff;
+    }
+
+    .dark-background {
+      --background-color: #0b3a6f;
+      --default-color: #ffffff;
+      --heading-color: #ffffff;
+      --surface-color: #14508f;
+      --contrast-color: #ffffff;
+    }
+
+    .header .topbar {
+      background-color: #0b3a6f;
+      color: #ffffff;
+    }
+
+    .header .topbar a,
+    .header .topbar i,
+    .header .topbar span {
+      color: #ffffff;
+    }
+
+    .header .topbar .social-links a:hover {
+      color: #8cc63f;
+    }
+
+    .section-title h2 {
+      color: #e30613;
+    }
+
+    .stats i,
+    .about .about-content ul i,
+    .featured-services .service-item .icon i,
+    .services .service-item .icon i {
+      color: #e30613;
+    }
+
+    .skills .progress .progress-bar {
+      background-color: #8cc63f;
+    }
+
+    .pricing .pricing-item.featured {
+      border-color: #e30613;
+    }
+
+    .pricing .pricing-item .btn-buy {
+      background-color: #0b3a6f;
+      color: #ffffff;
+    }
+
+    .pricing .pricing-item .btn-buy:hover,
+    .pricing .pricing-item.featured .btn-buy {
+      background-color: #e30613;
+      color: #ffffff;
+    }
+
+    .footer {
+      --background-color: #0b3a6f;
+      --default-color: #dfe8f3;
+      --heading-color: #ffffff;
+    }
+
+    .footer .footer-newsletter {
+      background-color: #14508f;
+    }
+
+    .scroll-top {
+      background-color: #e30613;
+    }
+
+    /* Logo diperbesar dan dibuat memanjang (proporsi gambar tetap terjaga) */
+    .header .logo img {
+      width: auto;
+      height: 60px;
+      max-height: none;
+      max-width: 260px;
+      object-fit: contain;
+      object-position: left center;
+      mix-blend-mode: multiply; /* membuat latar putih logo menyatu dengan latar abu-abu header */
+    }
+
+    /* Header bergaya referensi: latar abu-abu muda + panel navigasi miring gradasi biru-hijau */
+    .header .branding {
+      background-color: #f4f4f4;
+      position: relative;
+      overflow: hidden;
+      padding: 8px 0;
+    }
+
+    .header .branding .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (min-width: 1200px) {
+      .header .branding::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 28%;
+        right: 0;
+        /* biru sampai tepi kanan container (menu), hijau hanya di sisi luar container */
+        background: linear-gradient(90deg, #0b6fb8 0, #0b6fb8 calc(100% - (100vw - 1140px) / 2 + 30px), #a6c539 calc(100% - (100vw - 1140px) / 2 + 110px), #a6c539 100%);
+        clip-path: polygon(6% 0, 96% 0, 100% 100%, 0 100%);
+        z-index: 0;
+      }
+
+      /* Semua menu berada di area biru: putih */
+      .header .navmenu > ul > li > a,
+      .header .navmenu > ul > li > a:focus {
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      .header .navmenu > ul > li:hover > a,
+      .header .navmenu > ul > li > a.active {
+        color: #ffe14d;
+      }
+    }
+
+    @media (min-width: 1400px) {
+      .header .branding::before {
+        background: linear-gradient(90deg, #0b6fb8 0, #0b6fb8 calc(100% - (100vw - 1320px) / 2 + 30px), #a6c539 calc(100% - (100vw - 1320px) / 2 + 110px), #a6c539 100%);
+      }
+    }
+
+
+    /* Unit Operasi (menggantikan kartu layanan awal) */
+    .unit-ops {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .unit-ops .unit-title h2 {
+      font-family: var(--heading-font, "Montserrat", sans-serif);
+      font-size: 32px;
+      font-weight: 700;
+      color: #0b3a6f;
+      margin-bottom: 12px;
+    }
+
+    .unit-ops .unit-title p {
+      font-size: 17px;
+      margin-bottom: 28px;
+    }
+
+    .unit-ops .unit-map {
+      background: #ffffff;
+      border-radius: 6px;
+      padding: 10px;
+      height: 100%;
+    }
+
+    .unit-ops .unit-map svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .unit-ops .unit-head {
+      background: #3b7bbf;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      padding: 8px 10px;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .unit-ops .valuable-products,
+    .unit-ops .unit-card {
+      background: #ffffff;
+      border: 1px solid #b9d3ee;
+      border-radius: 8px;
+      height: 100%;
+      box-shadow: 0 2px 10px rgba(11, 58, 111, 0.06);
+    }
+
+    .unit-ops .valuable-products ul {
+      margin: 0;
+      padding: 12px 10px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.9;
+      color: #14233a;
+    }
+
+    .unit-ops .unit-body {
+      padding: 10px 8px 12px;
+      text-align: center;
+      font-size: 11.5px;
+      line-height: 1.5;
+      color: #14233a;
+    }
+
+    .unit-ops .unit-body strong {
+      display: block;
+      margin-top: 6px;
+      font-size: 11.5px;
+    }
+
+    .unit-ops .unit-body span {
+      display: block;
+    }
+
+    .unit-ops .unit-card.current {
+      border-color: #e30613;
+      box-shadow: 0 4px 16px rgba(227, 6, 19, 0.18);
+    }
+
+    .unit-ops .unit-card.current .unit-head {
+      background: #e30613;
+    }
+
+
+    /* ===== Profil (layout kartu + foto menimpa) ===== */
+    .pf-section { padding: 70px 0; }
+    .pf-wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+    .pf-card { position: relative; background: #fff; border: 2px solid #d6d6d6; border-radius: 30px;
+      box-shadow: 0 8px 26px rgba(11,58,111,.08); padding: 44px 48px; min-height: 520px;
+      display: flex; flex-direction: column; justify-content: center; }
+    .pf-card.img-left { margin-left: 16%; padding-left: 34%; }
+    .pf-card.img-right { margin-right: 16%; padding-right: 34%; }
+    .pf-card .pf-img { position: absolute; top: 50%; transform: translateY(-50%); width: 40%;
+      height: auto; object-fit: contain; border-radius: 16px; box-shadow: 0 10px 28px rgba(0,0,0,.25); }
+    .pf-card.img-left .pf-img { left: -12%; }
+    .pf-card.img-right .pf-img { right: -12%; }
+    .pf-label { color: #e0494f; font-size: 22px; font-weight: 500; margin-bottom: 6px; }
+    .pf-title { font-family: var(--heading-font, "Montserrat", sans-serif); font-size: 30px; font-weight: 700;
+      color: #0b3a6f; margin: 0 0 16px; }
+    .pf-card p { font-size: 15px; line-height: 1.75; margin: 0; text-align: justify; }
+    @media (max-width: 991px) {
+      .pf-card.img-left, .pf-card.img-right { margin: 0; padding: 28px 24px; min-height: 0; }
+      .pf-card .pf-img, .pf-card.img-left .pf-img, .pf-card.img-right .pf-img { position: static; transform: none;
+        width: 100%; max-width: 360px; height: auto; margin: 0 auto 20px; display: block; }
+    }
+
+
+    /* ===== Makna Logo (kartu seperti Profil, gambar di kanan) ===== */
+    .pf-card .pf-img.pf-logo { background: #fff; padding: 18px 22px; object-fit: contain; border: 1px solid #e3e8ef; }
+    .pf-card.img-right .pf-img.pf-logo { right: -12%; width: 42%; }
+    .pf-note { font-size: 15px; line-height: 1.75; margin: 14px 0 6px; font-weight: 600; color: #0b3a6f; }
+    .pf-colors { list-style: none; margin: 0; padding: 0; }
+    .pf-colors li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.7; margin-top: 8px; }
+    .pf-colors .dot { flex: 0 0 16px; width: 16px; height: 16px; border-radius: 50%; margin-top: 6px; }
+    .pf-colors .dot.biru { background: #0b6fb8; }
+    .pf-colors .dot.hijau { background: #8cc63f; }
+    .pf-colors .dot.merah { background: #e30613; }
+    @media (max-width: 991px) {
+      .pf-card.img-right .pf-img.pf-logo { width: 100%; max-width: 360px; }
+    }
+
+
+    /* ===== Struktur Organisasi ===== */
+    .so-section { padding: 70px 0; background: #fff; position: relative; }
+    .so-wrap { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+    .so-block + .so-block { margin-top: 70px; }
+    .so-label { color: #e0494f; font-size: 20px; font-weight: 500; text-align: center; margin-bottom: 4px; }
+    .so-title { font-family: var(--heading-font, "Montserrat", sans-serif); font-size: 28px; font-weight: 700;
+      color: #0b3a6f; text-align: center; margin: 0 0 18px; }
+    .so-intro { font-size: 17px; line-height: 1.8; text-align: justify; letter-spacing: .3px; color: #1e2a3a; margin: 0 0 28px; }
+    .so-fig { background: #fff; border: 1px solid #dbe5f1; border-radius: 18px; padding: 18px;
+      box-shadow: 0 8px 26px rgba(11,58,111,.08); text-align: center; }
+    .so-fig img { max-width: 100%; height: auto; display: inline-block; }
+    .so-fig.narrow img { max-width: 760px; width: 100%; }
+    .so-cap { margin-top: 10px; font-size: 13px; color: #6b7686; text-align: center; }
+
+
+    /* ===== Sejarah: timeline milestone ===== */
+    .ms-section { padding: 70px 0; background: #fff; }
+    .ms-wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+    .ms-kicker { font-size: 14px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #6b7686; }
+    .ms-title { font-family: var(--heading-font, "Montserrat", sans-serif); font-size: clamp(26px, 4vw, 40px);
+      font-weight: 800; color: #14233a; margin: 4px 0 34px; }
+    .ms-grid { display: grid; grid-template-columns: 330px 1fr; min-height: 460px; }
+    .ms-nav { background: #0b2a55; border-top-right-radius: 44px; padding: 44px 36px; display: flex;
+      flex-direction: column; align-items: flex-start; gap: 26px; }
+    .ms-arrow { width: 50px; height: 50px; border-radius: 50%; border: 3px solid #fff; background: transparent;
+      color: #fff; font-size: 24px; display: grid; place-items: center; cursor: pointer; transition: .25s; }
+    .ms-arrow:hover { background: #8cc63f; border-color: #8cc63f; }
+    .ms-years { display: flex; flex-direction: column; width: 100%; }
+    .ms-year { position: relative; background: none; border: 0; text-align: left; cursor: pointer;
+      padding: 12px 0 12px 42px; font-family: var(--heading-font, "Montserrat", sans-serif); font-size: 44px;
+      font-weight: 700; color: rgba(255,255,255,.28); transition: color .25s; }
+    .ms-year::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 7px;
+      background: rgba(255,255,255,.18); transition: background .25s; }
+    .ms-year:hover { color: rgba(255,255,255,.6); }
+    .ms-year.active { color: #fff; }
+    .ms-year.active::before { background: #8cc63f; border-radius: 4px; }
+    .ms-body { padding: 40px 20px 20px 70px; }
+    .ms-panel { display: none; animation: msFade .5s ease; }
+    .ms-panel.active { display: block; }
+    @keyframes msFade { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    .ms-big { font-family: var(--heading-font, "Montserrat", sans-serif); font-size: clamp(54px, 8vw, 92px);
+      font-weight: 800; color: #14233a; line-height: 1; margin: 0 0 30px; }
+    .ms-panel ul { list-style: none; padding: 0; margin: 0; max-width: 760px; }
+    .ms-panel li { position: relative; padding-left: 30px; margin-bottom: 18px; font-size: 17px; line-height: 1.85;
+      text-align: justify; color: #1e2a3a; }
+    .ms-panel li::before { content: ""; position: absolute; left: 6px; top: 14px; width: 8px; height: 8px;
+      border-radius: 50%; background: #c5ccd6; }
+    @media (max-width: 860px) {
+      .ms-grid { grid-template-columns: 1fr; }
+      .ms-nav { border-radius: 0 0 30px 0; padding: 22px; flex-direction: row; align-items: center; gap: 10px; overflow-x: auto; }
+      .ms-arrow { display: none; }
+      .ms-years { flex-direction: row; }
+      .ms-year { font-size: 26px; padding: 8px 18px; }
+      .ms-year::before { left: 0; right: 0; top: auto; bottom: 0; width: auto; height: 5px; }
+      .ms-body { padding: 30px 6px 0; }
+    }
+
+    .ms-sub { font-family: var(--heading-font, "Montserrat", sans-serif); font-size: 22px; font-weight: 700;
+      color: #e30613; margin: -14px 0 22px; }
+    .ms-section.alt { background: #f2f6fb; }
+
+    /* ===== Perusahaan Terkait (induk, anak perusahaan, mitra) ===== */
+    .clients .partner-item { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; }
+    .clients .partner-item img { height: 56px; width: auto; max-width: 100%; object-fit: contain; }
+    .clients .partner-item .p-name { font-size: 12px; font-weight: 700; color: #0b3a6f; line-height: 1.3; }
+    .clients .partner-item .p-tag { font-size: 10.5px; font-weight: 600; padding: 2px 10px; border-radius: 20px; color: #fff; }
+    .clients .p-tag.induk { background: #e30613; }
+    .clients .p-tag.anak { background: #0b6fb8; }
+    .clients .p-tag.grup { background: #6b7686; }
+    .clients .p-tag.mitra { background: #8cc63f; color: #14233a; }
+    .clients .swiper-slide { height: auto; }
+    .clients .swiper-pagination { position: relative; margin-top: 24px; }
+
+    /* ===== Inovasi Bisnis (kartu selang-seling) ===== */
+    .inovasi .inv-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .inovasi .inv-card { display: flex; align-items: center; gap: 48px; background: #fff; border: 1px solid #e3e8ef;
+      border-radius: 18px; box-shadow: 0 4px 18px rgba(11,58,111,.08); overflow: hidden; margin-bottom: 40px; min-height: 380px; }
+    .inovasi .inv-card.img-right { flex-direction: row-reverse; }
+    .inovasi .inv-img { flex: 0 0 42%; width: 42%; height: 380px; object-fit: cover; border-radius: 14px; }
+    .inovasi .inv-card.img-left { padding: 40px 48px 40px 0; }
+    .inovasi .inv-card.img-right { padding: 40px 0 40px 48px; }
+    .inovasi .inv-text { flex: 1; }
+    .inovasi .inv-title { font-family: var(--heading-font, "Montserrat", sans-serif); font-size: 30px; font-weight: 700;
+      color: #8cc63f; margin: 0 0 22px; line-height: 1.3; }
+    .inovasi .inv-text p { font-size: 16px; line-height: 1.9; text-align: justify; color: #1e2a3a; margin: 0; }
+    @media (max-width: 991px) {
+      .inovasi .inv-card, .inovasi .inv-card.img-right { flex-direction: column; gap: 22px; padding: 0 0 28px; }
+      .inovasi .inv-card.img-left, .inovasi .inv-card.img-right { padding: 0 0 28px; }
+      .inovasi .inv-img { flex: none; width: 100%; height: 260px; border-radius: 0; }
+      .inovasi .inv-text { padding: 0 24px; }
+      .inovasi .inv-title { font-size: 24px; }
+    }
+
+    /* ===== Galeri Kegiatan (grid 3 kolom + Sort By) ===== */
+    .portfolio .gal-wrap { max-width: 1100px; margin: 0 auto; padding: 24px 0 28px; border-top: 1px solid #d9dee5; border-bottom: 1px solid #d9dee5; }
+    .portfolio .gal-sort { display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-bottom: 22px; font-weight: 600; color: #14233a; }
+    .portfolio .gal-sort label { margin: 0; }
+    .portfolio .gal-sort select { padding: 8px 14px; border: 1px solid #d3dae3; border-radius: 6px; background: #fff; color: #14233a; font-size: 15px; cursor: pointer; }
+    .portfolio .gal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .portfolio .gal-item { display: block; border-radius: 14px; overflow: hidden; aspect-ratio: 16 / 9.4;
+      box-shadow: 0 4px 14px rgba(11,58,111,.10); background: #e9eef5; }
+    .portfolio .gal-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
+    .portfolio .gal-item:hover img { transform: scale(1.06); }
+    @media (max-width: 991px) { .portfolio .gal-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
+    @media (max-width: 575px) { .portfolio .gal-grid { grid-template-columns: 1fr; } }
+
+    /* ===== Bisnis Kami (kartu gambar + label) ===== */
+    .pricing .bs-card { position: relative; border-radius: 14px; overflow: hidden; aspect-ratio: 3 / 4;
+      box-shadow: 0 4px 16px rgba(11,58,111,.12); background: #e9eef5; }
+    .pricing .bs-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
+    .pricing .bs-card:hover img { transform: scale(1.06); }
+    .pricing .bs-label { position: absolute; left: 12px; bottom: 12px; right: 12px; padding: 8px 12px;
+      background: rgba(20,24,30,.62); color: #fff; font-family: var(--heading-font, "Montserrat", sans-serif);
+      font-size: 17px; font-weight: 700; line-height: 1.25; border-radius: 4px; }
+    @media (max-width: 575px) { .pricing .bs-label { font-size: 14px; left: 8px; right: 8px; bottom: 8px; padding: 6px 8px; } }
+
+    /* ===== Footer (layout kolom + bar hak cipta) ===== */
+    #footer.footer { padding: 0; }
+    #footer .ft-main { background: #0b3a6f; padding: 70px 0 60px; }
+    #footer .ft-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; align-items: start; }
+    #footer .ft-name { display: block; font-family: var(--heading-font, "Montserrat", sans-serif); font-size: 22px; font-weight: 700;
+      color: #fff; line-height: 1.35; margin-bottom: 14px; text-decoration: none; }
+    #footer .ft-addr { font-size: 15px; line-height: 1.8; color: #dfe8f3; margin: 0 0 14px; }
+    #footer .ft-line { font-size: 15px; line-height: 1.8; color: #fff; margin: 0; }
+    #footer .ft-line strong { color: #a6c539; font-weight: 600; }
+    #footer .ft-social { display: flex; gap: 12px; margin-top: 20px; }
+    #footer .ft-social a { width: 40px; height: 40px; border-radius: 50%; background: #a6c539; color: #0b3a6f;
+      display: inline-flex; align-items: center; justify-content: center; font-size: 19px; transition: .3s; }
+    #footer .ft-social a:hover { background: #fff; color: #e30613; }
+    #footer .ft-col h4 { font-size: 20px; font-weight: 500; color: #fff; margin: 0 0 22px; }
+    #footer .ft-col ul { list-style: none; margin: 0; padding: 0; }
+    #footer .ft-col li { margin-bottom: 14px; }
+    #footer .ft-col li a { color: #fff; font-size: 15px; text-decoration: none; transition: .25s; }
+    #footer .ft-col li a:hover { color: #a6c539; }
+    #footer .ft-follow { font-size: 15px; line-height: 1.8; color: #dfe8f3; margin: 0; }
+    #footer .ft-bottom { background: #14508f; padding: 24px 0; color: #dfe8f3; font-size: 14px; }
+    #footer .ft-bottom p { margin: 0 0 6px; }
+    #footer .ft-bottom a { color: #a6c539; }
+    #footer .ft-bottom a:hover { color: #fff; }
+    @media (max-width: 991px) { #footer .ft-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 575px) { #footer .ft-grid { grid-template-columns: 1fr; gap: 30px; } #footer .ft-main { padding: 50px 0 40px; } }
+
+    /* ===== Hero: nama perusahaan di baris sendiri ===== */
+    .hero h1 span { display: block; }
+
+    /* ===== Stats: sufiks persen ===== */
+    .stats .stats-item span.pct::after { content: "%"; }
+
+    #preloader:before {
+      border-color: #e30613 transparent #e30613 transparent;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@kpi.pertamina.com">info@kpi.pertamina.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+62 813 1468 8328</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://www.instagram.com/kilangpertaminainternasional/" class="instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/pt-kilang-pertamina-internasional/" class="linkedin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1>
+            <img src="assets/img/uuaa.png" alt="Logo PT Kilang Pertamina Internasional" class="img-fluid">
+          </h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Beranda</a></li>
+            <li><a href="#about">Profil</a></li>
+            <li><a href="#services">Inovasi</a></li>
+            <li><a href="#portfolio">Kegiatan</a></li>
+            <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#faq">Tanya Jawab</a></li>
+                <li class="dropdown"><a href="#"><span>Tautan Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#sejarah">Sejarah</a></li>
+                    <li><a href="#struktur">Struktur Organisasi</a></li>
+                    <li><a href="#kilang">Pembangunan Kilang</a></li>
+                    <li><a href="#logo">Makna Logo</a></li>
+                    <li><a href="#stats">Kapasitas Kilang</a></li>
+                    <li><a href="#testimonials">Nilai Perusahaan</a></li>
+                    <li><a href="#pricing">Bisnis Kami</a></li>
+                    <li><a href="#clients">Perusahaan Terkait</a></li>
+                  </ul>
+                </li>
+                <li><a href="#visi-misi">Visi &amp; Misi</a></li>
+                <li><a href="#contact">Hubungi Kami</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Selamat Datang di<span>PT Kilang Pertamina Internasional RU IV Cilacap</span></h1>
+            <p>"One KPI, One Spirit"</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Tentang Kami</a>
+              <a href="https://www.youtube.com/watch?v=dSeOREYaKyc" target="_blank" rel="noopener noreferrer" class="btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Tonton Video</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section unit-ops">
+
+      <div class="container">
+
+        <div class="unit-title" data-aos="fade-up">
+          <h2>Unit Operasi PT Kilang Pertamina Internasional</h2>
+          <p>PT Kilang Pertamina Internasional memiliki 6 unit operasi yang tersebar di seluruh Indonesia.</p>
+        </div>
+
+        <div class="row gy-4 align-items-stretch">
+
+          <!-- Peta unit operasi (ilustrasi). Ganti dengan gambar peta resmi bila ada:
+               <img src="assets/img/peta-unit-operasi.png" alt="Peta Unit Operasi" class="img-fluid"> -->
+          <div class="col-lg-9" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-map">
+              <svg viewBox="0 0 800 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Peta lokasi unit operasi PT Kilang Pertamina Internasional">
+                <!-- Pulau (ilustrasi sederhana) -->
+                <g fill="#d9dde2">
+                  <polygon points="55,70 95,55 150,95 215,150 265,205 245,225 190,200 130,150 80,110"/>
+                  <polygon points="262,248 300,238 380,248 420,258 410,268 340,270 290,262"/>
+                  <polygon points="400,100 450,80 520,95 540,150 520,200 470,215 420,195 395,150"/>
+                  <polygon points="560,110 600,100 620,130 590,140 585,190 565,185 570,140"/>
+                  <polygon points="640,130 700,120 790,150 780,210 720,230 680,200 650,170"/>
+                </g>
+
+                <!-- Label -->
+                <g font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">
+                  <g transform="translate(107,72)"><rect width="76" height="18" rx="3" fill="#3b7bbf"/><text x="38" y="12.5">RU II Dumai</text></g>
+                  <g transform="translate(174,150)"><rect width="76" height="18" rx="3" fill="#3b7bbf"/><text x="38" y="12.5">RU III Plaju</text></g>
+                  <g transform="translate(205,280)"><rect width="76" height="18" rx="3" fill="#3b7bbf"/><text x="38" y="12.5">RU VI Balongan</text></g>
+                  <g transform="translate(322,284)"><rect width="76" height="18" rx="3" fill="#3b7bbf"/><text x="38" y="12.5">RU IV Cilacap</text></g>
+                  <g transform="translate(440,132)"><rect width="84" height="18" rx="3" fill="#3b7bbf"/><text x="42" y="12.5">RU V Balikpapan</text></g>
+                  <g transform="translate(617,104)"><rect width="76" height="18" rx="3" fill="#3b7bbf"/><text x="38" y="12.5">RU VII Kasim</text></g>
+                </g>
+
+                <!-- Pin lokasi -->
+                <g fill="#d71920">
+                  <g transform="translate(145,118)"><path d="M0 0 C-8 -12 -9 -22 0 -22 C9 -22 8 -12 0 0Z"/><circle cx="0" cy="-15" r="3.2" fill="#fff"/></g>
+                  <g transform="translate(212,196)"><path d="M0 0 C-8 -12 -9 -22 0 -22 C9 -22 8 -12 0 0Z"/><circle cx="0" cy="-15" r="3.2" fill="#fff"/></g>
+                  <g transform="translate(285,252)"><path d="M0 0 C-8 -12 -9 -22 0 -22 C9 -22 8 -12 0 0Z"/><circle cx="0" cy="-15" r="3.2" fill="#fff"/></g>
+                  <g transform="translate(335,262)"><path d="M0 0 C-8 -12 -9 -22 0 -22 C9 -22 8 -12 0 0Z"/><circle cx="0" cy="-15" r="3.2" fill="#fff"/></g>
+                  <g transform="translate(478,178)"><path d="M0 0 C-8 -12 -9 -22 0 -22 C9 -22 8 -12 0 0Z"/><circle cx="0" cy="-15" r="3.2" fill="#fff"/></g>
+                  <g transform="translate(655,150)"><path d="M0 0 C-8 -12 -9 -22 0 -22 C9 -22 8 -12 0 0Z"/><circle cx="0" cy="-15" r="3.2" fill="#fff"/></g>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="valuable-products">
+              <div class="unit-head">Valuable Products</div>
+              <ul class="list-unstyled">
+                <li>Pertalite</li>
+                <li>Pertamax</li>
+                <li>Kerosene</li>
+                <li>Solar</li>
+                <li>Dexlite</li>
+                <li>Pertadex</li>
+                <li>Avtur</li>
+                <li>Pertamax Turbo</li>
+                <li>MFO Low Sulfur</li>
+                <li>Paraxylene</li>
+                <li>Benzene</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row gy-3 mt-3">
+
+          <div class="col-xl-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-card">
+              <div class="unit-head">RU II Dumai</div>
+              <div class="unit-body">
+                <strong>Kapasitas</strong>
+                <span>170 MBPOD</span>
+                <strong>Produk</strong>
+                <span>Solar, Avtur, Pertalite, Pertodex, MFO-LS, LSFO, UCO, NBF, Smooth Fluid, LPG, Green Coke</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="unit-card">
+              <div class="unit-head">RU III Plaju</div>
+              <div class="unit-body">
+                <strong>Kapasitas</strong>
+                <span>126 MBPOD</span>
+                <strong>Produk</strong>
+                <span>Biosolar B40, Pertalite/Dexlite, Avtur, LPG, Polytam, MFO LS, Musicool</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-card current">
+              <div class="unit-head">RU IV Cilacap</div>
+              <div class="unit-body">
+                <strong>Kapasitas</strong>
+                <span>348 MBPOD</span>
+                <strong>Produk</strong>
+                <span>Propylene, Benzene, Aspal, Minarex, Smooth Fluid, Paraxylene, HVO, SAF, Lube Oil Base</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="unit-card">
+              <div class="unit-head">RU V Balikpapan</div>
+              <div class="unit-body">
+                <strong>Kapasitas</strong>
+                <span>360 MBPOD</span>
+                <strong>Produk</strong>
+                <span>Solar, Pertalite, Pertadex, Avtur, Smooth Fluid</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="unit-card">
+              <div class="unit-head">RU VI Balongan</div>
+              <div class="unit-body">
+                <strong>Kapasitas</strong>
+                <span>150 MBPOD</span>
+                <strong>Produk</strong>
+                <span>Solar, Pertalite, Pertamax Turbo, Pertadex/Pertamina Dex, Avtur</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="unit-card">
+              <div class="unit-head">RU VII Kasim</div>
+              <div class="unit-body">
+                <strong>Kapasitas</strong>
+                <span>10 MBPOD</span>
+                <strong>Produk</strong>
+                <span>Pertalite &amp; Solar B40</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="section light-background pf-section">
+      <div class="pf-wrap" data-aos="fade-up">
+        <div class="pf-card img-left">
+          <img src="assets/img/profil-gedung.png" alt="Gedung Refinery Unit IV Cilacap" class="pf-img">
+          <div class="pf-label">Profil</div>
+          <h2 class="pf-title">Profil Perusahaan</h2>
+          <p>PT Kilang Pertamina Internasional (PT KPI) adalah Subholding Refining &amp; Petrochemical PT Pertamina (Persero) yang merupakan strategic holding company. PT KPI mengembangkan investasi dan menjalankan bisnis Pertamina terkait pengolahan minyak bumi serta bahan lainnya menjadi produk-produk bahan bakar, pelumasan, petrokimia dan farmasi yang bernilai tinggi serta pengembangan bisnis pengolahan dan petrokimia dalam rangka memenuhi kebutuhan produk olahan dan petrokimia sesuai perkembangan pasar.</p>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Visi Misi Section (layout carousel seperti AKHLAK) -->
+    <section id="visi-misi" class="testimonials section dark-background">
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 6000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Visi</h3>
+                <h4>Perusahaan</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Menjadi Kilang Minyak yang Kompetitif di Dunia.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End Visi -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Misi</h3>
+                <h4>Perusahaan</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Mengolah Minyak Bumi menjadi produk BBM, Non BBM, dan Petrokimia untuk memberikan nilai tambah bagi Perusahaan.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End Misi -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Motto</h3>
+                <h4>Perusahaan</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Bekerja dalam kebersamaan untuk keunggulan bersama.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End Motto -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Visi Misi Section -->
+
+    <!-- Sejarah Section -->
+    <section id="sejarah" class="ms-section">
+      <div class="ms-wrap" data-aos="fade-up">
+        <div class="ms-kicker">Sejarah Perusahaan</div>
+        <h2 class="ms-title">Riwayat Singkat PT Kilang Pertamina Internasional</h2>
+        <div class="ms-grid">
+          <div class="ms-nav">
+            <button class="ms-arrow ms-up" aria-label="Tahun sebelumnya"><i class="bi bi-chevron-up"></i></button>
+            <div class="ms-years">
+              <button class="ms-year active" data-i="0">2017</button>
+              <button class="ms-year" data-i="1">2019</button>
+              <button class="ms-year" data-i="2">2020</button>
+            </div>
+            <button class="ms-arrow ms-down" aria-label="Tahun berikutnya"><i class="bi bi-chevron-down"></i></button>
+          </div>
+          <div class="ms-body">
+            <div class="ms-panel active" data-i="0">
+              <h3 class="ms-big">2017</h3>
+              <ul>
+                <li>Pada 13 November 2017 PT Kilang Pertamina Internasional (PT KPI) didirikan sebagai strategic holding company PT Pertamina (Persero) untuk menjalankan, mengendalikan, dan mengelola kegiatan investasi dan usaha terkait megaproyek pengolahan dan petrokimia.</li>
+                <li>Pada 28 November 2017 didirikan PT Pertamina Rosneft Pengolahan dan Petrokimia (PT PRPP) sebagai Anak Perusahaan PT KPI untuk mengelola pembangunan proyek New Grass Root Refinery (NGRR) Tuban yang merupakan proyek kerja sama antara PT Pertamina (Persero) dan Rosneft Oil Company.</li>
+              </ul>
+            </div>
+            <div class="ms-panel" data-i="1">
+              <h3 class="ms-big">2019</h3>
+              <ul>
+                <li>PT KPI mendirikan kembali satu anak perusahaan pada 7 Mei 2019, yaitu PT Kilang Pertamina Balikpapan (PT KPB), yang bertujuan untuk mengelola pembangunan Proyek Refinery Development Master Plan (RDMP) RU V Balikpapan dan dipersiapkan untuk menjadi perusahaan patungan bekerja sama dengan mitra.</li>
+              </ul>
+            </div>
+            <div class="ms-panel" data-i="2">
+              <h3 class="ms-big">2020</h3>
+              <ul>
+                <li>Pada bulan Juni 2020, PT KPI semakin berkembang perannya selain mengelola proyek-proyek infrastruktur juga pengembangan bisnis pengolahan dan petrokimia serta mengelola kilang-kilang pengolahan &amp; petrokimia yang sebelumnya dikelola oleh PT Pertamina (Persero) yaitu Refinery Unit II Dumai, Refinery Unit III Plaju, Refinery Unit IV Cilacap, Refinery Unit V Balikpapan, Refinery Unit VI Balongan dan Refinery Unit VII Kasim.</li>
+                <li>Perubahan peran tersebut ditandai dengan pengukuhan PT Kilang Pertamina Internasional sebagai Subholding Refining &amp; Petrochemical sebagai bagian dari pembentukan Holding Migas. Perubahan peran ini diikuti dengan pengangkatan Dewan Komisaris dan Direksi PT KPI yang baru.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Sejarah Section -->
+
+    <!-- Struktur Organisasi Section -->
+    <section id="struktur" class="so-section">
+      <div class="so-wrap">
+
+        <div class="so-block" data-aos="fade-up">
+          <div class="so-label">Struktur Organisasi</div>
+          <h2 class="so-title">PT Kilang Pertamina Internasional RU IV Cilacap</h2>
+          <p class="so-intro">Dalam menjalankan bisnisnya, PT Kilang Pertamina Internasional RU IV Cilacap didukung oleh Sumber Daya Manusia yang kompeten dengan susunan struktur organisasi yang dipimpin oleh General Manager RU IV Cilacap dan dapat dilihat pada bagan berikut.</p>
+          <div class="so-fig">
+            <img src="assets/img/struktur-organisasi-ru4.png" alt="Struktur Organisasi PT Kilang Pertamina Internasional RU IV Cilacap">
+          </div>
+        </div>
+
+        <div class="so-block" data-aos="fade-up">
+          <div class="so-label">Struktur Organisasi</div>
+          <h2 class="so-title">Fungsi Refinery Business and Optimization (RBO)</h2>
+          <p class="so-intro">Fungsi Refinery Business and Optimization (RBO) merupakan salah satu fungsi operasional di RU IV Cilacap yang membawahi Refinery Planning, Supply Chain &amp; Distribution, serta Performance &amp; Evaluation. Susunan strukturnya dapat dilihat pada bagan berikut.</p>
+          <div class="so-fig narrow">
+            <img src="assets/img/struktur-organisasi-rbo.png" alt="Struktur Organisasi Fungsi Refinery Business and Optimization (RBO)">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Struktur Organisasi Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-droplet-half"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="348" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Ribu Barel/Hari Kapasitas Produksi Terbesar</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-flag-fill"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="34" data-purecounter-duration="1" class="purecounter pct"></span>
+              <p>Suplai BBM Nasional</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter pct"></span>
+              <p>Kebutuhan BBM di Pulau Jawa</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-buildings-fill"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Unit Pengolahan Minyak &amp; Gas Bumi Pertamina</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Pembangunan Kilang Section -->
+    <section id="kilang" class="ms-section alt">
+      <div class="ms-wrap" data-aos="fade-up">
+        <div class="ms-kicker">Pengembangan RU IV Cilacap</div>
+        <h2 class="ms-title">Perjalanan Pembangunan Kilang Cilacap</h2>
+        <div class="ms-grid">
+          <div class="ms-nav">
+            <button class="ms-arrow ms-up" aria-label="Sebelumnya"><i class="bi bi-chevron-up"></i></button>
+            <div class="ms-years">
+              <button class="ms-year active" data-i="0">1974</button>
+              <button class="ms-year" data-i="1">1981</button>
+              <button class="ms-year" data-i="2">1988</button>
+              <button class="ms-year" data-i="3">1995</button>
+              <button class="ms-year" data-i="4">2002</button>
+              <button class="ms-year" data-i="5">2011</button>
+              <button class="ms-year" data-i="6">2016</button>
+            </div>
+            <button class="ms-arrow ms-down" aria-label="Berikutnya"><i class="bi bi-chevron-down"></i></button>
+          </div>
+          <div class="ms-body">
+            <div class="ms-panel active" data-i="0">
+              <h3 class="ms-big">1974</h3>
+              <div class="ms-sub">Kilang I</div>
+              <ul>
+                <li>Mulai dibangun pada tahun 1974 dan beroperasi pada tahun 1976. Kilang ini dirancang untuk mengolah minyak mentah yang berasal dari Timur Tengah dan dari dalam negeri.</li>
+                <li>Hasil olahannya mencakup produk penting seperti bahan bakar minyak (BBM), bahan dasar pelumas, dan aspal.</li>
+                <li>Kapasitas awal pengolahan 100.000 barrel/hari, kemudian ditingkatkan pada tahun 1998/1999 menjadi 118.000 barrel/hari melalui <i>Debottlenecking project</i>.</li>
+                <li>Keberadaan Kilang I menjadi awal pengembangan RU IV Cilacap sebagai salah satu kilang paling strategis di Indonesia untuk memenuhi kebutuhan minyak nasional.</li>
+              </ul>
+            </div>
+            <div class="ms-panel" data-i="1">
+              <h3 class="ms-big">1981</h3>
+              <div class="ms-sub">Kilang II</div>
+              <ul>
+                <li>Didirikan pada tahun 1981 dan mulai beroperasi pada tahun 1983 untuk menambah kapasitas produksi karena permintaan BBM dalam negeri yang terus meningkat.</li>
+                <li>Kilang ini mengolah jenis minyak “<i>cocktail</i>”, yaitu minyak campuran.</li>
+                <li>Kapasitas awal pengolahan 200.000 barrel/hari, kemudian ditingkatkan melalui proyek peningkatan kapasitas pada tahun 1998/1999 menjadi 230.000 barrel/hari.</li>
+              </ul>
+            </div>
+            <div class="ms-panel" data-i="2">
+              <h3 class="ms-big">1988</h3>
+              <div class="ms-sub">Kilang Paraxylene</div>
+              <ul>
+                <li>Didirikan pada tahun 1988 dan mulai beroperasi pada tahun 1990. Berbeda dari dua kilang sebelumnya, Kilang Paraxylene fokus memproduksi bahan dasar petrokimia seperti paraxylene dan benzene yang banyak digunakan dalam industri tekstil, plastik, dan kimia lainnya.</li>
+                <li>Pembangunannya mempertimbangkan ketersediaan bahan baku naphtha yang memadai dari Kilang Minyak II Cilacap, adanya fasilitas pendukung seperti dermaga, tangki, dan utilitas, serta peluang pasar yang menjanjikan di dalam maupun di luar negeri.</li>
+              </ul>
+            </div>
+            <div class="ms-panel" data-i="3">
+              <h3 class="ms-big">1995</h3>
+              <div class="ms-sub">Debottlenecking Project</div>
+              <ul>
+                <li>Pada tahun 1995 PT Pertamina merencanakan proyek <i>Debottlenecking</i> Kilang Minyak Cilacap. Proyek ini direncanakan karena kebutuhan BBM, minyak pelumas, dan aspal yang terus meningkat sejalan dengan pertumbuhan ekonomi dan semakin berkembangnya pembangunan nasional.</li>
+                <li>Proyek ini mulai beroperasi pada tahun 1998/1999, sehingga kapasitas pengolahan Kilang Minyak I meningkat menjadi 118.000 barrel/hari dan Kilang Minyak II menjadi 230.000 barrel/hari.</li>
+                <li>Tujuannya meningkatkan kapasitas produksi Kilang Minyak I dan II untuk memenuhi kebutuhan BBM dalam negeri, serta meningkatkan kapasitas produksi <i>Lube Oil Plant</i> untuk memenuhi <i>Lube Base Oil</i> dan <i>Asphalt</i>.</li>
+              </ul>
+            </div>
+            <div class="ms-panel" data-i="4">
+              <h3 class="ms-big">2002</h3>
+              <div class="ms-sub">Kilang LPG &amp; SRU</div>
+              <ul>
+                <li>Kilang SRU (<i>Sulphur Recovery Unit</i>) merupakan salah satu proyek PT Pertamina yaitu Kilang Langit Biru Cilacap. Dibangun pada 27 Februari 2002 untuk mendukung komitmen perusahaan terhadap kelestarian lingkungan.</li>
+                <li>Mulai beroperasi pada tahun 2005 dengan tujuan mengurangi emisi gas dari sisa proses pengolahan sehingga emisi yang dibuang ke udara lebih ramah lingkungan.</li>
+                <li>Umpannya adalah sembilan <i>stream sour gas</i> yang sebelumnya hanya dikirim ke <i>fuel gas system</i> sebagai bahan bakar kilang atau dibakar di <i>flare</i>. Sour gas tersebut diolah menjadi bahan baku LPG, naphtha (condensate), dan molten sulphur (sulfur cair).</li>
+                <li>Ini merupakan penerapan mengubah <i>unvaluable product</i> menjadi <i>valuable product</i> sehingga meningkatkan profit perusahaan dan mengurangi dampak kerusakan terhadap lingkungan.</li>
+              </ul>
+            </div>
+            <div class="ms-panel" data-i="5">
+              <h3 class="ms-big">2011</h3>
+              <div class="ms-sub">IPAL &amp; RFCC</div>
+              <ul>
+                <li>Instalasi Pengolahan Air Limbah (IPAL) didirikan pada tahun 2011 hingga 2015 untuk meningkatkan baku mutu limbah cair agar tidak mencemari lingkungan saat dibuang ke lingkungan sekitar.</li>
+                <li>Kilang <i>Residual Fluid Catalytic Cracker</i> (RFCC) dibangun untuk meningkatkan <i>yield valuable product</i> dan <i>complexity index</i>. <i>Feed</i> yang diolah adalah <i>Low Sulphur Waxy Residue</i> (LSWR) dari unit FOC II untuk menghasilkan produk BBM dengan nilai oktan tinggi.</li>
+                <li>RFCC Cilacap merupakan kilang kedua yang dimiliki PT Pertamina (Persero) dari seluruh unit pengolahan di Indonesia, dibangun atas dasar perkiraan permintaan minyak yang terus meningkat dan untuk mengurangi ketergantungan impor produk minyak.</li>
+              </ul>
+            </div>
+            <div class="ms-panel" data-i="6">
+              <h3 class="ms-big">2016</h3>
+              <div class="ms-sub">Proyek Langit Biru Cilacap (PLBC)</div>
+              <ul>
+                <li>PLBC merupakan lanjutan dari pembangunan <i>Residual Fluid Catalytic Cracker</i> (RFCC).</li>
+                <li>Mulai dilaksanakan pada tahun 2016 hingga saat ini.</li>
+                <li>Bertujuan meningkatkan kualitas BBM menjadi standar EURO 4.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Pembangunan Kilang Section -->
+
+    <!-- Makna Logo Section -->
+    <section id="logo" class="section light-background pf-section">
+      <div class="pf-wrap" data-aos="fade-up">
+        <div class="pf-card img-right">
+          <img src="assets/img/logo-kpi.png" alt="Logo PT Kilang Pertamina Internasional" class="pf-img pf-logo">
+          <div class="pf-label">Logo Perusahaan</div>
+          <h2 class="pf-title">Makna Logo</h2>
+          <p>Simbol grafis berbentuk anak panah pada logo Pertamina melambangkan aspirasi organisasi Pertamina untuk senantiasa bergerak ke depan, maju, dan progresif. Bentuk anak panah tersebut juga menyerupai huruf “P” yang merupakan huruf awal dari nama Pertamina. Tiga elemen berwarna yang terdapat pada logo tersebut melambangkan pulau-pulau dengan berbagai skala yang merupakan bentuk negara Indonesia.</p>
+          <div class="pf-note">Makna dari 3 warna pada logo Pertamina:</div>
+          <ul class="pf-colors">
+            <li><span class="dot biru"></span><span>Warna biru memiliki arti andal, dapat dipercaya dan bertanggung jawab.</span></li>
+            <li><span class="dot hijau"></span><span>Warna hijau memiliki arti sumber daya energi yang berwawasan lingkungan.</span></li>
+            <li><span class="dot merah"></span><span>Warna merah memiliki arti keuletan dan ketegasan serta keberanian dalam menghadapi berbagai macam kesulitan.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section><!-- /Makna Logo Section -->
+
+    <!-- Perusahaan Terkait (Induk, Anak Perusahaan & Mitra) -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Perusahaan Terkait</h2>
+        <p><span>Induk, Anak Perusahaan</span> <span class="description-title">&amp; Mitra</span></p>
+      </div>
+
+      <div class="container">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 30
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 40
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 50
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 60
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide partner-item">
+              <img src="assets/img/pertamina.jpeg" class="img-fluid" alt="PT Pertamina (Persero)">
+              <span class="p-name">PT Pertamina (Persero)</span>
+              <span class="p-tag induk">Induk Perusahaan</span>
+            </div>
+
+            <div class="swiper-slide partner-item">
+              <img src="assets/img/prpp-removebg-preview.png" class="img-fluid" alt="PT Pertamina Rosneft Pengolahan dan Petrokimia">
+              <span class="p-name">PT Pertamina Rosneft Pengolahan dan Petrokimia</span>
+              <span class="p-tag anak">Anak Perusahaan KPI</span>
+            </div>
+
+            <div class="swiper-slide partner-item">
+              <img src="assets/img/kpb-removebg-preview.png" class="img-fluid" alt="PT Kilang Pertamina Balikpapan">
+              <span class="p-name">PT Kilang Pertamina Balikpapan</span>
+              <span class="p-tag anak">Anak Perusahaan KPI</span>
+            </div>
+
+            <div class="swiper-slide partner-item">
+              <img src="assets/img/rosneft.png" class="img-fluid" alt="Rosneft Oil Company">
+              <span class="p-name">Rosneft Oil Company</span>
+              <span class="p-tag mitra">Mitra Kolaborasi</span>
+            </div>
+
+            <div class="swiper-slide partner-item">
+              <img src="assets/img/patra.png" class="img-fluid" alt="Pertamina Patra Niaga">
+              <span class="p-name">Pertamina Patra Niaga</span>
+              <span class="p-tag grup">Grup Pertamina</span>
+            </div>
+
+            <div class="swiper-slide partner-item">
+              <img src="assets/img/pis.webp" class="img-fluid" alt="Pertamina International Shipping">
+              <span class="p-name">Pertamina International Shipping</span>
+              <span class="p-tag grup">Grup Pertamina</span>
+            </div>
+
+            <div class="swiper-slide partner-item">
+              <img src="assets/img/phe.png" class="img-fluid" alt="Pertamina Hulu Energi">
+              <span class="p-name">Pertamina Hulu Energi</span>
+              <span class="p-tag grup">Grup Pertamina</span>
+            </div>
+
+            <div class="swiper-slide partner-item">
+              <img src="assets/img/pl.png" class="img-fluid" alt="Pertamina Lubricants">
+              <span class="p-name">Pertamina Lubricants</span>
+              <span class="p-tag grup">Grup Pertamina</span>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Perusahaan Terkait -->
+
+    <!-- Inovasi Bisnis Section (kartu selang-seling kiri/kanan) -->
+    <section id="services" class="inovasi section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Inovasi</h2>
+        <p><span>Inovasi</span> <span class="description-title">Bisnis</span></p>
+      </div>
+
+      <div class="inv-wrap">
+
+        <!-- Gambar di KIRI -->
+        <div class="inv-card img-left" data-aos="fade-up">
+          <img src="assets/img/PRD.jpeg" alt="Pertamina Renewable Diesel (Pertamina RD)" class="inv-img">
+          <div class="inv-text">
+            <h3 class="inv-title">Pertamina Renewable Diesel (Pertamina RD)</h3>
+            <p>Di tahun 2022, PT Kilang Pertamina Internasional (KPI) berhasil meluncurkan produk Hydrotreated Vegetable Oil dengan merek dagang Pertamina Renewable Diesel (Pertamina RD) dengan keunggulan kandungan sulfur yang rendah dan emisi 50% lebih baik dari EURO V.</p>
+          </div>
+        </div>
+
+        <!-- Gambar di KANAN -->
+        <div class="inv-card img-right" data-aos="fade-up">
+          <img src="assets/img/SAF.jpeg" alt="Sustainable Aviation Fuel (SAF)" class="inv-img">
+          <div class="inv-text">
+            <h3 class="inv-title">Sustainable Aviation Fuel (SAF)</h3>
+            <p>Pada tahun 2023, untuk mendukung pencapaian target Net Zero Emission, PT Kilang Pertamina Internasional (KPI) meluncurkan Sustainable Aviation Fuel, yaitu bahan bakar ramah lingkungan untuk pesawat terbang. Pada tanggal 27 Oktober 2023 dilakukan uji terbang Pesawat Garuda Indonesia menggunakan Sustainable Aviation Fuel (SAF) J2,4. Adapun SAF diproduksi di Green Refinery RU IV Cilacap menggunakan metode co-processing ester dan fatty acid (HEFA). Uji terbang Bioavtur J2,4 pada pesawat Boeing 737-800 menunjukkan respon yang baik dan terkendali pada pesawat. Ini merupakan milestone lintas BUMN untuk ketahanan energi Indonesia.</p>
+          </div>
+        </div>
+
+        <!-- Gambar di KIRI -->
+        <div class="inv-card img-left" data-aos="fade-up">
+          <img src="assets/img/PPK.jpeg" alt="Produk-Produk Petrokimia" class="inv-img">
+          <div class="inv-text">
+            <h3 class="inv-title">Produk-Produk Petrokimia</h3>
+            <p>PT Kilang Pertamina Internasional (KPI) mengoperasikan Kilang Petrokimia, terdiri dari Kilang Paraxylene di RU-IV Cilacap yang memproduksi Paraxylene dan Benzene serta produk lainnya, Kilang Polypropylene di RU-III Plaju yang memproduksi Polytam (Polypropylene Pertamina) serta Kilang OCU (Olefin Convertion Unit) di RU-VI Balongan yang memproduksi Propylene.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Inovasi Bisnis Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Amanah</h3>
+                <h4>Nilai AKHLAK</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Memegang teguh kepercayaan yang diberikan oleh masyarakat, mitra, dan negara.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Kompeten</h3>
+                <h4>Nilai AKHLAK</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Terus belajar dan mengembangkan kapabilitas agar mampu menjawab tantangan industri kilang.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Harmonis</h3>
+                <h4>Nilai AKHLAK</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Saling peduli dan menghargai perbedaan dalam satu semangat kebersamaan.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Loyal</h3>
+                <h4>Nilai AKHLAK</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Berdedikasi dan mengutamakan kepentingan bangsa dan negara.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Adaptif</h3>
+                <h4>Nilai AKHLAK</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Terus berinovasi dan antusias dalam menggerakkan ataupun menghadapi perubahan.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Kolaboratif</h3>
+                <h4>Nilai AKHLAK</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Membangun kerja sama yang sinergis untuk menciptakan nilai bersama.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Kegiatan</h2>
+        <p><span>Galeri</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="gal-wrap">
+
+          <div class="gal-sort">
+            <label for="gal-sort-select">Sort By:</label>
+            <select id="gal-sort-select">
+              <option value="asc">Terlama</option>
+              <option value="desc">Terbaru</option>
+            </select>
+          </div>
+
+          <div class="gal-grid" id="gal-grid">
+
+          <a href="assets/img/g1.jpeg" class="glightbox gal-item" data-gallery="galeri-kegiatan" title="Operasi Kilang" data-aos="fade-up" data-aos-delay="150">
+            <img src="assets/img/g1.jpeg" alt="Operasi Kilang" loading="lazy">
+          </a>
+
+          <a href="assets/img/g2.jpeg" class="glightbox gal-item" data-gallery="galeri-kegiatan" title="Program Lingkungan" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/g2.jpeg" alt="Program Lingkungan" loading="lazy">
+          </a>
+
+          <a href="assets/img/g3.jpeg" class="glightbox gal-item" data-gallery="galeri-kegiatan" title="Tanggung Jawab Sosial" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/g3.jpeg" alt="Tanggung Jawab Sosial" loading="lazy">
+          </a>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Pricing Section (Bisnis Kami) -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Bisnis</h2>
+        <p><span>Bisnis</span> <span class="description-title">Kami</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-xl-3 col-md-6 col-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="bs-card">
+              <img src="assets/img/feedstock.jpeg" alt="Feedstock Management" loading="lazy">
+              <div class="bs-label">Feedstock<br>Management</div>
+            </div>
+          </div><!-- End Bisnis Item -->
+
+          <div class="col-xl-3 col-md-6 col-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="bs-card">
+              <img src="assets/img/product.jpeg" alt="Product Transfer" loading="lazy">
+              <div class="bs-label">Product<br>Transfer</div>
+            </div>
+          </div><!-- End Bisnis Item -->
+
+          <div class="col-xl-3 col-md-6 col-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="bs-card">
+              <img src="assets/img/refinery.jpeg" alt="Refinery Operation" loading="lazy">
+              <div class="bs-label">Refinery<br>Operation</div>
+            </div>
+          </div><!-- End Bisnis Item -->
+
+          <div class="col-xl-3 col-md-6 col-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="bs-card">
+              <img src="assets/img/project.jpeg" alt="Project Infrastructure" loading="lazy">
+              <div class="bs-label">Project<br>Infrastructure</div>
+            </div>
+          </div><!-- End Bisnis Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>F.A.Q</h2>
+        <p><span>Pertanyaan yang Sering</span> <span class="description-title">Diajukan</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Apa itu PT Kilang Pertamina Internasional (PT KPI)?</h3>
+                <div class="faq-content">
+                  <p>PT KPI adalah Subholding Refining &amp; Petrochemical PT Pertamina (Persero) yang menjalankan bisnis pengolahan minyak bumi dan petrokimia serta mengelola kilang-kilang Pertamina.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Di mana lokasi Refinery Unit IV?</h3>
+                <div class="faq-content">
+                  <p>Refinery Unit IV berlokasi di Cilacap, Jawa Tengah, dan menjadi salah satu kilang yang dikelola PT KPI.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Kilang apa saja yang dikelola PT KPI?</h3>
+                <div class="faq-content">
+                  <p>Refinery Unit II Dumai, Refinery Unit III Plaju, Refinery Unit IV Cilacap, Refinery Unit V Balikpapan, Refinery Unit VI Balongan, dan Refinery Unit VII Kasim.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Apa visi PT KPI RU IV Cilacap?</h3>
+                <div class="faq-content">
+                  <p>Menjadi Kilang Minyak yang Kompetitif di Dunia.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Apa semangat yang diusung PT KPI?</h3>
+                <div class="faq-content">
+                  <p>"One KPI, One Spirit", yaitu satu semangat untuk bekerja bersama dalam menjalankan bisnis kilang dan petrokimia.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Bagaimana cara menghubungi PT KPI RU IV Cilacap?</h3>
+                <div class="faq-content">
+                  <p>Silakan gunakan formulir pada bagian Kontak di bawah, atau hubungi alamat email dan nomor telepon yang tercantum di halaman ini.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Kontak</h2>
+        <p><span>Butuh Bantuan?</span> <span class="description-title">Hubungi Kami</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Alamat</h3>
+                  <p>Jl. MT. Haryono No. 77, Kedung Lumbung, Lomanis, Kec. Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah 53221</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Telepon</h3>
+                  <p>+62 813 1468 8328</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>info@kpi.pertamina.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps?q=Pertamina+RU+IV+Cilacap,+Jl.+MT.+Haryono+No.77,+Kedung+Lumbung,+Lomanis,+Cilacap+Tengah,+Cilacap+53221&output=embed" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form id="wa-form" method="post" class="php-email-form" data-wa-number="6281314688328" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Nama Anda</label>
+                  <input type="text" name="name" id="name-field" class="form-control" placeholder="Nama lengkap" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Email Anda</label>
+                  <input type="email" class="form-control" name="email" id="email-field" placeholder="nama@email.com" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subjek</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" placeholder="Contoh: Permohonan kunjungan / Informasi produk" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Pesan</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required="">Halo Admin PT Kilang Pertamina Internasional RU IV Cilacap, saya ingin menanyakan mengenai ...</textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit"><i class="bi bi-whatsapp"></i> Kirim via WhatsApp</button>
+                  <p class="mt-3 mb-0" style="font-size:13px;">Pesan akan terbuka di WhatsApp dan siap dikirim ke admin kami.</p>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="ft-main">
+      <div class="container">
+        <div class="ft-grid">
+
+          <div class="ft-col ft-contact">
+            <a href="index.html" class="ft-name">PT Kilang Pertamina Internasional RU IV Cilacap</a>
+            <p class="ft-addr">Jl. MT. Haryono No. 77, Kedung Lumbung, Lomanis<br>Kec. Cilacap Tengah, Kab. Cilacap, Jawa Tengah 53221</p>
+            <p class="ft-line"><strong>Telepon:</strong> <span>+62 813 1468 8328</span></p>
+            <p class="ft-line"><strong>Email:</strong> <span>info@kpi.pertamina.com</span></p>
+            <div class="ft-social">
+              <a href="https://www.instagram.com/kilangpertaminainternasional/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/pt-kilang-pertamina-internasional/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="ft-col">
+            <h4>Tautan Berguna</h4>
+            <ul>
+              <li><a href="#hero">Beranda</a></li>
+              <li><a href="#about">Tentang Kami</a></li>
+              <li><a href="#services">Inovasi</a></li>
+              <li><a href="#">Syarat &amp; Ketentuan</a></li>
+            </ul>
+          </div>
+
+          <div class="ft-col">
+            <h4>Bidang Usaha</h4>
+            <ul>
+              <li><a href="#pricing">Pengolahan Minyak</a></li>
+              <li><a href="#pricing">Petrokimia</a></li>
+              <li><a href="#pricing">Pelumas</a></li>
+              <li><a href="#pricing">Pengembangan Kilang</a></li>
+            </ul>
+          </div>
+
+          <div class="ft-col">
+            <h4>Ikuti Kami</h4>
+            <p class="ft-follow">Ikuti media sosial kami untuk mendapatkan informasi dan kegiatan terbaru.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="ft-bottom">
+      <div class="container text-center">
+        <p>© <span>Hak Cipta</span> <strong class="px-1 sitename">PT Kilang Pertamina Internasional RU IV Cilacap</strong> <span>Seluruh Hak Dilindungi</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Timeline (Sejarah & Pembangunan Kilang) -->
+  <script>
+    document.querySelectorAll('.ms-grid').forEach(function (g) {
+      var yrs = [].slice.call(g.querySelectorAll('.ms-year')),
+          pns = [].slice.call(g.querySelectorAll('.ms-panel')), cur = 0;
+      function go(i) {
+        cur = (i + yrs.length) % yrs.length;
+        yrs.forEach(function (y, k) { y.classList.toggle('active', k === cur); });
+        pns.forEach(function (p, k) { p.classList.toggle('active', k === cur); });
+      }
+      yrs.forEach(function (y, k) { y.addEventListener('click', function () { go(k); }); });
+      g.querySelector('.ms-up').addEventListener('click', function () { go(cur - 1); });
+      g.querySelector('.ms-down').addEventListener('click', function () { go(cur + 1); });
+    });
+  </script>
+
+  <!-- Formulir Kontak -> WhatsApp -->
+  <script>
+    /* Dicegat di fase capture agar tidak diproses validate.js (form PHP bawaan template). */
+    document.addEventListener('submit', function (e) {
+      var f = e.target;
+      if (!f || f.id !== 'wa-form') return;
+      e.preventDefault();
+      e.stopPropagation();
+
+      var nomor = f.getAttribute('data-wa-number');
+      var v = function (n) { return (f.elements[n].value || '').trim(); };
+
+      var teks =
+        'Halo PT Kilang Pertamina Internasional RU IV Cilacap,\n\n' +
+        'Nama: ' + v('name') + '\n' +
+        'Email: ' + v('email') + '\n' +
+        'Subjek: ' + v('subject') + '\n\n' +
+        'Pesan:\n' + v('message') + '\n\n' +
+        'Terima kasih.';
+
+      var url = 'https://wa.me/' + nomor + '?text=' + encodeURIComponent(teks);
+      var w = window.open(url, '_blank', 'noopener');
+      if (!w) { window.location.href = url; }
+    }, true);
+  </script>
+
+  <!-- Urutkan Galeri -->
+  <script>
+    (function () {
+      var sel = document.getElementById('gal-sort-select'), grid = document.getElementById('gal-grid');
+      if (!sel || !grid) return;
+      var items = [].slice.call(grid.children);
+      sel.addEventListener('change', function () {
+        var list = sel.value === 'desc' ? items.slice().reverse() : items;
+        list.forEach(function (el) { grid.appendChild(el); });
+      });
+    })();
+  </script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
