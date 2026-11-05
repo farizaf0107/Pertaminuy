@@ -394,7 +394,7 @@
       .inovasi .inv-title { font-size: 24px; }
     }
 
-    /* ===== Galeri Kegiatan (grid 3 kolom + Sort By) ===== */
+    /* ===== Galeri Kegiatan (grid 3 kolom + Urutkan) ===== */
     .portfolio .gal-wrap { max-width: 1100px; margin: 0 auto; padding: 24px 0 28px; border-top: 1px solid #d9dee5; border-bottom: 1px solid #d9dee5; }
     .portfolio .gal-sort { display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-bottom: 22px; font-weight: 600; color: #14233a; }
     .portfolio .gal-sort label { margin: 0; }
@@ -406,6 +406,12 @@
     .portfolio .gal-item:hover img { transform: scale(1.06); }
     @media (max-width: 991px) { .portfolio .gal-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
     @media (max-width: 575px) { .portfolio .gal-grid { grid-template-columns: 1fr; } }
+
+    /* ===== Jarak Galeri & Bisnis Kami: lebih rapat, atas = bawah judul ===== */
+    section.portfolio.section,
+    section.pricing.section { padding-top: 30px; padding-bottom: 30px; }
+    section.portfolio .section-title,
+    section.pricing .section-title { padding-bottom: 30px; }
 
     /* ===== Bisnis Kami (kartu gambar + label) ===== */
     .pricing .bs-card { position: relative; border-radius: 14px; overflow: hidden; aspect-ratio: 3 / 4;
@@ -489,25 +495,7 @@
             <li><a href="#about">Profil</a></li>
             <li><a href="#services">Inovasi</a></li>
             <li><a href="#portfolio">Kegiatan</a></li>
-            <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#faq">Tanya Jawab</a></li>
-                <li class="dropdown"><a href="#"><span>Tautan Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#sejarah">Sejarah</a></li>
-                    <li><a href="#struktur">Struktur Organisasi</a></li>
-                    <li><a href="#kilang">Pembangunan Kilang</a></li>
-                    <li><a href="#logo">Makna Logo</a></li>
-                    <li><a href="#stats">Kapasitas Kilang</a></li>
-                    <li><a href="#testimonials">Nilai Perusahaan</a></li>
-                    <li><a href="#pricing">Bisnis Kami</a></li>
-                    <li><a href="#clients">Perusahaan Terkait</a></li>
-                  </ul>
-                </li>
-                <li><a href="#visi-misi">Visi &amp; Misi</a></li>
-                <li><a href="#contact">Hubungi Kami</a></li>
-              </ul>
-            </li>
+            <li><a href="#faq">Informasi</a></li>
             <li><a href="#contact">Kontak</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -704,7 +692,7 @@
     <!-- Visi Misi Section (layout carousel seperti AKHLAK) -->
     <section id="visi-misi" class="testimonials section dark-background">
 
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+      <img src="assets/img/pkpi.jpg" class="testimonials-bg" alt="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -829,7 +817,7 @@
           <h2 class="so-title">Fungsi Refinery Business and Optimization (RBO)</h2>
           <p class="so-intro">Fungsi Refinery Business and Optimization (RBO) merupakan salah satu fungsi operasional di RU IV Cilacap yang membawahi Refinery Planning, Supply Chain &amp; Distribution, serta Performance &amp; Evaluation. Susunan strukturnya dapat dilihat pada bagan berikut.</p>
           <div class="so-fig narrow">
-            <img src="assets/img/struktur-organisasi-rbo.png" alt="Struktur Organisasi Fungsi Refinery Business and Optimization (RBO)">
+            <img src="assets/img/RBO.jpg" alt="Struktur Organisasi Fungsi Refinery Business and Optimization (RBO)">
           </div>
         </div>
 
@@ -1134,7 +1122,7 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section dark-background">
 
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+      <img src="assets/img/pkpi.jpg" class="testimonials-bg" alt="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -1249,7 +1237,7 @@
         <div class="gal-wrap">
 
           <div class="gal-sort">
-            <label for="gal-sort-select">Sort By:</label>
+            <label for="gal-sort-select">Urutkan:</label>
             <select id="gal-sort-select">
               <option value="asc">Terlama</option>
               <option value="desc">Terbaru</option>
@@ -1268,6 +1256,30 @@
 
           <a href="assets/img/g3.jpeg" class="glightbox gal-item" data-gallery="galeri-kegiatan" title="Tanggung Jawab Sosial" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/g3.jpeg" alt="Tanggung Jawab Sosial" loading="lazy">
+          </a>
+
+          <a href="assets/img/g4.jpeg" class="glightbox gal-item" data-gallery="galeri-kegiatan" title="Pemeliharaan Kilang" data-aos="fade-up" data-aos-delay="150">
+            <img src="assets/img/g4.webp" alt="Pemeliharaan Kilang" loading="lazy">
+          </a>
+
+          <a href="assets/img/g5.jpeg" class="glightbox gal-item" data-gallery="galeri-kegiatan" title="Penghijauan" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/g5.jpg" alt="Penghijauan" loading="lazy">
+          </a>
+
+          <a href="assets/img/g6.jpeg" class="glightbox gal-item" data-gallery="galeri-kegiatan" title="Bantuan Pendidikan" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/g6.jpeg" alt="Bantuan Pendidikan" loading="lazy">
+          </a>
+
+          <a href="assets/img/g7.jpeg" class="glightbox gal-item" data-gallery="galeri-kegiatan" title="Keselamatan Kerja" data-aos="fade-up" data-aos-delay="150">
+            <img src="assets/img/g7.jpg" alt="Keselamatan Kerja" loading="lazy">
+          </a>
+
+          <a href="assets/img/g8.jpeg" class="glightbox gal-item" data-gallery="galeri-kegiatan" title="Pengelolaan Limbah" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/g8.jpeg" alt="Pengelolaan Limbah" loading="lazy">
+          </a>
+
+          <a href="assets/img/g9.jpeg" class="glightbox gal-item" data-gallery="galeri-kegiatan" title="Pemberdayaan Masyarakat" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/g9.jpeg" alt="Pemberdayaan Masyarakat" loading="lazy">
           </a>
 
           </div>
